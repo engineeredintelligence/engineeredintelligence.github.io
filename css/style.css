@@ -1,3 +1,10 @@
+/* get rid of that ugly white space for everything */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* normal navigation bar properties */
 .navbar {
   	overflow: hidden;
   	background-color: #4C4CFF;
@@ -5,60 +12,83 @@
   	top: 0;
   	width: 100%;
   	height: 48px;
-	}
-/*normal navigation bar properties*/
+}
 
 
+/* the links inside the navigation bar */
 .navbar a{
-  	float: right;
+  	float: left;
   	display: block;
   	color: #fff;
  	text-align: center;
 	padding: 14px 10px;
 
 	text-decoration: none;
-	font-size: 17px;
-}
-/*The links inside the navigation bar */
+	font-size: 16px;
 
+    opacity: 0.6;
+    transition: opacity 0.4s linear;
+    -webkit-transition: opacity 0.4s linear;  /* chrome&safari */
+    -moz-transition: opacity 0.4s linear;  /* firefox */
+    -o-transition: opacity 0.4s linear  /* opera - who uses this anymore? */
+}
+
+
+/* the links when they are hovered */
 .navbar a:hover {
-	background: white;
+	background: #68EAFF;
 	color: black;
-}
-/*The links when they are hovered*/
 
+    opacity: 1;  /* for transitions */
+}
+
+
+/* responsive menu dissapears when screen is big boy */
 .navbar .burger {
 	display: none;
 }
-/*responsive menu dissapears when screen is big boy*/
 
+
+/* lots of weird responsive menu stuff */
 @media screen and (max-width: 675px) {
 	.navbar a:not(:first-child){
 		display: none;
 	}
+    
 	.navbar .burger{
 		display: block;
-		width:auto;
+		width: auto;
 	}
+    
 	.navbar.responsive {
 		position: fixed;
 		display: block;
 		width: 100%;
 		height: auto;
-		text-align: right;
+		text-align: left;
 	}
 
 	.navbar.responsive a {
 		float: none;
 		display: block;
-		text-align: right;
-		
-	}/*
+		text-align: left;
+
+        opacity: 0.6;
+        transition: opacity 0.4s linear;
+        -webkit-transition: opacity 0.4s linear;  /* chrome&safari */
+        -moz-transition: opacity 0.4s linear;  /* firefox */
+        -o-transition: opacity 0.4s linear  /* opera - who uses this anymore? */
+	}
+
+    .navbar.responsive a:hover {
+        opacity: 1;
+    }
+    
+/*
 	.navbar .responsive a:first-child {
 		float: right !important;
 		text-align: right !important;
 		width: 48px !important;
-	}*/
+	}
+*/
 }
-/*lots of weird responsive menu stuff*/
-
