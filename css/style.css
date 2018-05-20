@@ -50,7 +50,7 @@
 
 
 /* lots of weird responsive menu stuff */
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 634px) {
 	.navbar a:not(:first-child){
 		display: none;
 	}
