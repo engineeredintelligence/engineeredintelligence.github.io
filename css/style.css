@@ -4,6 +4,7 @@
     padding:0;
 }
 
+
 /* normal navigation bar properties */
 .navbar {
   	overflow: hidden;
@@ -27,18 +28,19 @@
 	font-size: 16px;
 
     opacity: 0.6;
-    transition: opacity 0.4s linear;
-    -webkit-transition: opacity 0.4s linear;  /* chrome&safari */
-    -moz-transition: opacity 0.4s linear;  /* firefox */
-    -o-transition: opacity 0.4s linear  /* opera - who uses this anymore? */
+    background-color: #4C4CFF;  /* need this for cooler fade effect */
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;  /* chrome&safari */
+    -moz-transition: 0.4s linear;  /* firefox */
+    -o-transition: 0.4s linear  /* opera - who uses this anymore? */
 }
 
 
 /* the links when they are hovered */
 .navbar a:hover {
-	background: #68EAFF;
-	color: black;
+    color: black;
 
+	background: #68EAFF;
     opacity: 1;  /* for transitions */
 }
 
@@ -74,13 +76,15 @@
 		text-align: left;
 
         opacity: 0.6;
-        transition: opacity 0.4s linear;
-        -webkit-transition: opacity 0.4s linear;  /* chrome&safari */
-        -moz-transition: opacity 0.4s linear;  /* firefox */
-        -o-transition: opacity 0.4s linear  /* opera - who uses this anymore? */
+        background-color: #4C4CFF;  /* need this for cooler fade effect */
+        transition: 0.4s linear;
+        -webkit-transition: 0.4s linear;  /* chrome&safari */
+        -moz-transition: 0.4s linear;  /* firefox */
+        -o-transition: 0.4s linear  /* opera - who uses this anymore? */
 	}
 
     .navbar.responsive a:hover {
+        background: #68EAFF;
         opacity: 1;
     }
     
